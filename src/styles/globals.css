@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@600;700;800&family=DM+Sans:wght@400;500;600&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* ── LIGHT MODE ─────────────────────────────────────────────────────────── */
+  :root {
+    /* Page canvas */
+    --background: 220 20% 97%;       /* near-white with a cool tint */
+    --foreground: 222 47% 11%;       /* very dark navy — high contrast */
+
+    /* Cards & surfaces */
+    --card: 0 0% 100%;               /* pure white cards */
+    --card-foreground: 222 47% 11%;  /* same dark navy */
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222 47% 11%;
+
+    /* Brand */
+    --primary: 239 84% 60%;          /* indigo-600 */
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 269 84% 60%;        /* violet */
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted / subtle surfaces */
+    --muted: 220 20% 93%;            /* light grey-blue */
+    --muted-foreground: 220 14% 40%; /* medium-dark — readable on muted */
+
+    /* Accent (used for hover tints, badges) */
+    --accent: 239 100% 96%;          /* very light indigo */
+    --accent-foreground: 239 84% 35%;/* dark indigo text on accent bg */
+
+    /* Semantic */
+    --destructive: 0 84% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & inputs */
+    --border: 220 20% 86%;
+    --input: 220 20% 86%;
+    --ring: 239 84% 60%;
+
+    /* Charts */
+    --chart-1: 236 88% 97%;
+    --chart-2: 238 83% 82%;
+    --chart-3: 239 84% 67%;
+    --chart-4: 239 84% 52%;
+    --chart-5: 238 84% 37%;
+
+    /* Sidebar */
+    --sidebar: 220 20% 93%;
+    --sidebar-foreground: 222 47% 11%;
+    --sidebar-primary: 239 84% 60%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 239 100% 96%;
+    --sidebar-accent-foreground: 239 84% 35%;
+    --sidebar-border: 220 20% 86%;
+    --sidebar-ring: 239 84% 60%;
+
+    /* Typography */
+    --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-heading: "Plus Jakarta Sans", -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-serif: ui-serif, Georgia, "Times New Roman", serif;
+    --font-mono: ui-monospace, "SF Mono", Monaco, "Cascadia Code", "Roboto Mono", Consolas, "Courier New", monospace;
+
+    --radius: 0.5rem;
+
+    /* Shadows */
+    --shadow-2xs: 0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-xs:  0 1px 3px 0px hsl(0 0% 0% / 0.05);
+    --shadow-sm:  0 1px 3px 0px hsl(0 0% 0% / 0.08), 0 1px 2px -1px hsl(0 0% 0% / 0.08);
+    --shadow:     0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 1px 2px -1px hsl(0 0% 0% / 0.10);
+    --shadow-md:  0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 2px 4px -1px hsl(0 0% 0% / 0.10);
+    --shadow-lg:  0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 4px 6px -1px hsl(0 0% 0% / 0.10);
+    --shadow-xl:  0 1px 3px 0px hsl(0 0% 0% / 0.10), 0 8px 10px -1px hsl(0 0% 0% / 0.10);
+    --shadow-2xl: 0 1px 3px 0px hsl(0 0% 0% / 0.25);
+  }
+
+  /* ── DARK MODE ──────────────────────────────────────────────────────────── */
+  .dark {
+    /* Page canvas — deep navy, not pure black */
+    --background: 222 47% 8%;
+    --foreground: 213 31% 93%;       /* light blue-grey — very readable */
+
+    /* Cards — slightly lighter than page */
+    --card: 222 47% 12%;
+    --card-foreground: 213 31% 93%;
+
+    --popover: 222 47% 12%;
+    --popover-foreground: 213 31% 93%;
+
+    /* Brand — slightly brighter in dark for contrast */
+    --primary: 239 84% 67%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 269 84% 67%;
+    --secondary-foreground: 0 0% 100%;
+
+    /* Muted surfaces */
+    --muted: 222 47% 16%;
+    --muted-foreground: 215 20% 62%;  /* lighter than before — more readable */
+
+    /* Accent */
+    --accent: 222 47% 18%;
+    --accent-foreground: 213 31% 93%;
+
+    /* Semantic */
+    --destructive: 0 72% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    /* Borders & inputs */
+    --border: 222 30% 20%;
+    --input: 222 30% 20%;
+    --ring: 239 84% 67%;
+
+    /* Sidebar */
+    --sidebar: 222 47% 10%;
+    --sidebar-foreground: 213 31% 93%;
+    --sidebar-primary: 239 84% 67%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 222 47% 18%;
+    --sidebar-accent-foreground: 213 31% 93%;
+    --sidebar-border: 222 30% 20%;
+    --sidebar-ring: 239 84% 67%;
+  }
+
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading) !important;
+    color: hsl(var(--foreground));
+  }
+
+  /* Ensure all text inherits theme foreground by default */
+  p, span, li, td, th, label, div {
+    color: inherit;
+  }
+}
+
+/* ── Custom utilities ─────────────────────────────────────────────────────── */
+@layer utilities {
+  .animate-in {
+    animation-duration: 0.2s;
+    animation-fill-mode: both;
+  }
+
+  .fade-in {
+    animation-name: fadeIn;
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+
+  /* Marquee */
+  .animate-marquee {
+    animation: marquee 28s linear infinite;
+  }
+
+  .animate-marquee-fast {
+    animation: marquee 16s linear infinite;
+  }
+
+  @keyframes marquee {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+
+  /* Adaptive text helpers */
+  .text-adaptive-primary {
+    @apply text-slate-800 dark:text-slate-100;
+  }
+  .text-adaptive-secondary {
+    @apply text-slate-600 dark:text-slate-300;
+  }
+  .text-adaptive-muted {
+    @apply text-slate-500 dark:text-slate-400;
+  }
+  .bg-adaptive-card {
+    @apply bg-white dark:bg-slate-900;
+  }
+  .bg-adaptive-surface {
+    @apply bg-slate-50 dark:bg-slate-800;
+  }
+  .border-adaptive {
+    @apply border-slate-200 dark:border-slate-700;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
