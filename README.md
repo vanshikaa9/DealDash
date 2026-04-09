@@ -1,4 +1,4 @@
-# 💸 DealDash
+# ✨DealDash✨
 
 **Life’s too short for bad deals — paying full is a CRIME, and with DealDash, every penny counts!**
 
@@ -7,7 +7,7 @@ Designed with students and smart shoppers in mind, it filters through cluttered 
 
 ---
 
-## 🚀 The Problem
+## 🧩 The Problem
 
 As a student constantly juggling multiple payment apps and discount platforms, I noticed a common issue:
 
@@ -25,7 +25,7 @@ Instead of helping users save money, these platforms create **confusion, frustra
 
 **DealDash** solves this by offering a **clean, curated coupon experience** that prioritizes:
 
-### ✅ Quality over Quantity
+###  Quality over Quantity
 Only the most relevant and genuinely valuable coupons are shown.
 
 ### 🧠 Worth It System
