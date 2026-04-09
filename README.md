@@ -46,6 +46,17 @@ Deals are neatly organized for easy browsing and better discoverability.
 
 ---
 
+## 📸 Preview
+
+### Homepage
+![Homepage](./screenshots/home.png)
+
+### About Section
+![About](./screenshots/about.png)
+
+### Deals Dashboard
+![Deals](./screenshots/deals.png)
+
 ## ✨ Features
 
 - Curated and verified coupon listings  
