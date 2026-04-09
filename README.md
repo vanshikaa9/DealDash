@@ -69,7 +69,7 @@ Deals are neatly organized for easy browsing and better discoverability.
 
 ## 🌍 Live Demo
 
-🔗 **Deployed Link:** [(https://deal-dash-gilt.vercel.app)]
+🔗 **Deployed Link:** [Try for yourself](https://deal-dash-gilt.vercel.app)
 
 ---
 
