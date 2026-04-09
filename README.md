@@ -48,14 +48,13 @@ Deals are neatly organized for easy browsing and better discoverability.
 ## 📸 Project Preview
 
 ### Homepage
-<img src="screenshots/home.png" width="800"/>
+<img src="./screenshots/home.png.png" width="800"/>
 
 ### About Section
-<img src="screenshots/about.png" width="800"/>
+<img src="./screenshots/about.png.png" width="800"/>
 
 ### Deals Dashboard
-<img src="screenshots/deals.png" width="800"/>
-
+<img src="./screenshots/deals.png.png" width="800"/>
 ## ✨ Features
 
 - Curated and verified coupon listings  
