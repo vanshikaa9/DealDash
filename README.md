@@ -46,16 +46,16 @@ Deals are neatly organized for easy browsing and better discoverability.
 
 ---
 
-## 📸 Preview
+## 📸 Project Preview
 
 ### Homepage
-![Homepage](./screenshots/home.png)
+<img src="./screenshots/home.png" width="800"/>
 
 ### About Section
-![About](./screenshots/about.png)
+<img src="./screenshots/about.png" width="800"/>
 
 ### Deals Dashboard
-![Deals](./screenshots/deals.png)
+<img src="./screenshots/deals.png" width="800"/>
 
 ## ✨ Features
 
